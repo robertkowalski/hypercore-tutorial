@@ -86,7 +86,7 @@ ws.onCandle({ key: CANDLE_KEY }, (data) => {
 
 For the next step, the P2P sharing part we have set up a P2P network to share our data:
 
-```js  
+```js
 const net = network()
 ```
 
@@ -104,7 +104,7 @@ feed.on('ready', () => {
 The share function, which is called on every new connection, takes the feed as argument. No worries, we will show the whole function at the end of the section.
 
 ```
-function share (feed) {  
+function share (feed) {
 
 // [...]
 ```
