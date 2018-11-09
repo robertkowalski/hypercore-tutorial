@@ -80,7 +80,7 @@ To store and share the incoming data we have to process it. Instead of logging t
 ```js
 ws.onCandle({ key: CANDLE_KEY }, (data) => {
   const str = JSON.stringify(data)
-  writeStream.write(str)
+  writeStream.append(str)
 })
 ```
 
